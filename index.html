@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Print STL Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      border: 2px; 
+    }
+
+   
+    form {
+      max-width: 950px;
+      width: 100%;
+      background-color: #f2f1f3;
+      padding: 2px;
+      display:block;
+      margin-bottom: 5px;
+      border-radius: 8px;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    }
+
+    .file-upload {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .preview {
+      max-width: 100%;
+      height: auto; /* Set height to auto for responsive scaling */
+      margin-bottom: 1px;
+      margin-top: 1px;
+    }
+    
+    .card-footer {
+      background-color: #f0f1ed;
+      color: #1d0101;
+      padding: 9px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button {
+      background-color: #008CBA;
+      color: #fff;
+      padding: 3px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    label {
+      display:inline-table;
+      margin-bottom: 1px;
+    }
+
+    input {
+      width: 25%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    
+    
+    input[type="file"] {
+      width: calc(50% - 20px);
+    }
+    .preview {
+    max-width: 20%;
+    height: auto; /* Set height to auto for responsive scaling */
+    margin-bottom: 0.5px;
+    margin-top: 1px;
+  }
+
+  /* Additional CSS for responsive design */
+  @media only screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens if needed */
+    .bio-data {
+      padding: 2px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+    }
+  }
+  .responsive-image{max-width: 100%;height: auto;}
+  .responsive1-image{max-width: 100%;height: Auto;}
+  body {
+      font-family: Arial, sans-serif;
+      border: 2px; 
+    }
+    
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 2px;
+      padding: 1px;
+    }
+
+    .box {
+  background-color: #73d0f5;
+  padding: 1px;
+  border: 2px solid #6bfc46;
+  border-radius: 5px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  text-align: right; /* Align text to the right */
+}
+.text-right {
+    text-align: center;
+}
+
+h4, select {
+    display: inline-table;
+    vertical-align: middle;
+}
+
+   
+
+    /* Additional styling for responsive design */
+    @media only screen and (max-width: 600px) {
+      .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+        
+  </style>
+</head>
+<body>
+
+<div class="bio-data">
+   
+  <form id="myForm">
+    <img src="Images/Logo.jpeg"alt=""class="responsive-image">
+    <h3>TL Basic Details</h3> 
+    <p>VRN:
+          <td><select name="Available">
+            <option value="P2P">TUC-092</option>
+            <option value="P2C">TUD-218</option>
+            <option value="P2P">TUD-219</option>
+            <option value="P2C">TUD-547</option>
+            <option value="P2P">TUD-548</option>
+            <option value="P2C">TUE-011</option>
+            <option value="P2P">TLH-788</option>
+            <option value="P2C">TLJ-888</option>
+            <option value="P2P">TLG-631</option>
+            <option value="P2C">TLG-632</option>
+            <option value="P2P">TLF-541</option>
+            <option value="P2C">TLF-542</option>
+            <option value="P2P">TME-302</option>
+            <option value="P2C">TME-303</option>
+            <option value="P2P">TME-304</option>
+            <option value="P2C">TME-305</option>
+            <option value="P2P">TME-306</option>
+            <option value="P2C">TME308</option>
+            <option value="P2P">TMG-906</option>
+            <option value="P2C">TMG-907</option>
+                   </select> </td>
+        </select>
+        Inspector Name:
+          <td><select name="Available">
+            <option value="P2P">Jawed Brohi</option>
+            <option value="P2C">Muhammad Ali</option>
+            <option value="P2P">Gul Sher</option>
+            <option value="P2C">Jawwad Ali hashmi</option>
+            <option value="P2P">Muhammad Immad</option>
+            <option value="P2C">Sharjeel Ahmed</option>
+            <option value="P2P">Muhammad Ibrahim Khan</option>
+            <option value="P2C">Abdul Majeed</option>
+            <option value="P2C">Abdul Khaliq</option>
+           
+                   </select> </td>
+        </select>
+      </select>
+      STL Date :
+        <td><input type="date"></td>
+      </select><br>
+              </p>
+              <p>Driver 1 name:
+                <input type="text" name="Driver 1 name" size="30"
+                  maxlength="30" />
+                  
+                  STL Form #:
+                  <td><select name="Available">
+                  <option value="P2P">KT/TLF-541/Jan-001</option>
+<option value="P2P">FSD/TLG-632/Jan-002</option>
+<option value="P2P">KT/TUC-092/Jan-003</option>
+<option value="P2P">KT/TUD-218/Jan-004</option>
+<option value="P2P">KT/TUD-219/Jan-005</option>
+<option value="P2P">KT/TUD-219/Jan-006</option>
+<option value="P2P">KT/TUD-547/Jan-007</option>
+<option value="P2P">DLP/TUD-548/Jan-008</option>
+<option value="P2P">KT/TUC-092/Jan-009</option>
+<option value="P2P">KT/TUD-218/Jan-010</option>
+<option value="P2P">KT/TUD-548/Jan-011</option>
+<option value="P2P">KT/TUC-092/Jan-012</option>
+<option value="P2P">KT/TUD-218/Jan-013</option>
+<option value="P2P">KT/TUD-219/Jan-014</option>
+<option value="P2P">DLP/TUD-547/Jan-015</option>
+<option value="P2P">MCR/TLH-788/Jan-016</option>
+<option value="P2P">MCK/TME-304/Jan-017</option>
+<option value="P2P">KT/TUC-092/Jan-018</option>
+<option value="P2P">KT/TUD-218/Jan-019</option>
+<option value="P2P">KT/TUD-219/Jan-020</option>
+<option value="P2P">KT/TUD-548/Jan-021</option>
+<option value="P2P">MCK/TME-303/Jan-022</option>
+<option value="P2P">KT/TUD-218/Jan-023</option>
+<option value="P2P">KT/TUD-219/Jan-024</option>
+<option value="P2P">KT/TUD-547/Jan-025</option>
+<option value="P2P">KT/TUE-011/Jan-026</option>
+<option value="P2P">MCR/TLJ-888/Jan-027</option>
+<option value="P2P">KT/TME-305/Jan-028</option>
+<option value="P2P">KT/TUC-092/Jan-029</option>
+<option value="P2P">KT/TUD-218/Jan-030</option>
+<option value="P2P">KT/TUD-219/Jan-031</option>
+<option value="P2P">KT/TUE-011/Jan-032</option>
+<option value="P2P">MCR/TLG-632/Jan-033</option>
+<option value="P2P">KT/TME-302/Jan-034</option>
+<option value="P2P">MCR/TMG-906/Jan-035</option>
+<option value="P2P">KT/TUC-092/Jan-036</option>
+<option value="P2P">KT/TUD-218/Jan-037</option>
+<option value="P2P">KT/TUD-219/Jan-038</option>
+<option value="P2P">KT/TUD-547/Jan-039</option>
+<option value="P2P">KT/TUD-548/Jan-040</option>
+<option value="P2P">KT/TUE-011/Jan-041</option>
+<option value="P2P">KT/TME-306/Jan-042</option>
+<option value="P2P">KT/TUC-092/Jan-043</option>
+<option value="P2P">KT/TUD-218/Jan-044</option>
+<option value="P2P">KT/TUD-219/Jan-045</option>
+<option value="P2P">KT/TUD-547/Jan-046</option>
+<option value="P2P">KT/TUE-011/Jan-047</option>
+<option value="P2P">KT/TLF-541/Jan-048</option>
+<option value="P2P">KT/TME-306/Jan-049</option>
+<option value="P2P">KT/TME-308/Jan-050</option>
+<option value="P2P">MCK/TMG-906/Jan-051</option>
+<option value="P2P">KT/TUD-218/Jan-052</option>
+<option value="P2P">KT/TUD-219/Jan-053</option>
+<option value="P2P">KT/TUD-547/Jan-054</option>
+<option value="P2P">KT/TUE-011/Jan-055</option>
+<option value="P2P">KT/TME-308/Jan-056</option>
+<option value="P2P">KT/TMG-907/Jan-057</option>
+<option value="P2P">KT/TUD-218/Jan-058</option>
+<option value="P2P">KT/TUD-219/Jan-059</option>
+<option value="P2P">KT/TUD-547/Jan-060</option>
+<option value="P2P">KT/TUE-011/Jan-061</option>
+<option value="P2P">MCK/TME-303/Jan-062</option>
+<option value="P2P">DLP/TUC-092/Jan-063</option>
+<option value="P2P">KT/TUD-218/Jan-064</option>
+<option value="P2P">KT/TUD-219/Jan-065</option>
+<option value="P2P">KT/TUD-547/Jan-066</option>
+<option value="P2P">KT/TUD-548/Jan-067</option>
+<option value="P2P">KT/TUE-011/Jan-068</option>
+<option value="P2P">MCR/TLF-541/Jan-069</option>
+<option value="P2P">KT/TLG-631/Jan-070</option>
+<option value="P2P">MCK/TLG-632/Jan-071</option>
+<option value="P2P">MCR/TLH-788/Jan-072</option>
+<option value="P2P">KT/TME-308/Jan-073</option>
+<option value="P2P">KT/TUD-218/Jan-074</option>
+<option value="P2P">KT/TUD-219/Jan-075</option>
+<option value="P2P">KT/TUD-547/Jan-076</option>
+<option value="P2P">KT/TUD-548/Jan-077</option>
+<option value="P2P">KT/TUE-011/Jan-078</option>
+<option value="P2P">KT/TUD-218/Jan-079</option>
+<option value="P2P">KT/TUD-219/Jan-080</option>
+<option value="P2P">KT/TUD-547/Jan-081</option>
+<option value="P2P">KT/TUD-548/Jan-082</option>
+<option value="P2P">KT/TUE-011/Jan-083</option>
+<option value="P2P">KT/TLG-631/Jan-084</option>
+<option value="P2P">FSD/TME-306/Jan-085</option>
+<option value="P2P">KT/TUC-092/Jan-086</option>
+<option value="P2P">KT/TUD-218/Jan-087</option>
+<option value="P2P">KT/TUD-219/Jan-088</option>
+<option value="P2P">KT/TUD-547/Jan-089</option>
+<option value="P2P">KT/TUD-547/Jan-090</option>
+<option value="P2P">KT/TUE-011/Jan-091</option>
+<option value="P2P">KT/TUC-092/Jan-092</option>
+<option value="P2P">KT/TUD-219/Jan-093</option>
+<option value="P2P">KT/TUD-547/Jan-094</option>
+<option value="P2P">KT/TUD-548/Jan-095</option>
+<option value="P2P">KT/TLJ-888/Jan-096</option>
+<option value="P2P">FSD/TME-308/Jan-097</option>
+<option value="P2P">KT/TUC-092/Jan-098</option>
+<option value="P2P">KT/TUD-218/Jan-099</option>
+<option value="P2P">KT/TUD-219/Jan-100</option>
+<option value="P2P">KT/TUD-547/Jan-101</option>
+<option value="P2P">KT/TUD-548/Jan-102</option>
+<option value="P2P">KT/TUD-548/Jan-103</option>
+<option value="P2P">MCR/TLF-541/Jan-104</option>
+<option value="P2P">MCR/TLG-632/Jan-105</option>
+<option value="P2P">KT/TUD-219/Jan-106</option>
+<option value="P2P">KT/TUD-547/Jan-107</option>
+<option value="P2P">KT/TUE-011/Jan-108</option>
+<option value="P2P">KT/TLG-631/Jan-109</option>
+<option value="P2P">MCK/TLH-788/Jan-110</option>
+<option value="P2P">MCR/TME-303/Jan-111</option>
+<option value="P2P">KT/TUD-218/Jan-112</option>
+<option value="P2P">KT/TUD-219/Jan-113</option>
+<option value="P2P">KT/TUD-547/Jan-114</option>
+<option value="P2P">KT/TUE-011/Jan-115</option>
+<option value="P2P">KT/TLG-631/Jan-116</option>
+<option value="P2P">MCK/TLH-788/Jan-117</option>
+<option value="P2P">KT/TUC-092/Jan-118</option>
+<option value="P2P">KT/TUD-218/Jan-119</option>
+<option value="P2P">KT/TUD-219/Jan-120</option>
+<option value="P2P">KT/TUD-547/Jan-121</option>
+<option value="P2P">DLP/TUD-548/Jan-122</option>
+<option value="P2P">KT/TUE-011/Jan-123</option>
+<option value="P2P">MCR/TME-302/Jan-124</option>
+<option value="P2P">KT/TME-305/Jan-125</option>
+<option value="P2P">KT/TUC-092/Jan-126</option>
+<option value="P2P">KT/TUD-218/Jan-127</option>
+<option value="P2P">KT/TUD-219/Jan-128</option>
+<option value="P2P">KT/TUD-547/Jan-129</option>
+<option value="P2P">KT/TUE-011/Jan-130</option>
+<option value="P2P">KT/TLG-631/Jan-131</option>
+<option value="P2P">MCR/TLG-632/Jan-132</option>
+<option value="P2P">KT/TUD-218/Jan-133</option>
+<option value="P2P">KT/TUD-547/Jan-134</option>
+<option value="P2P">KT/TUD-548/Jan-135</option>
+<option value="P2P">KT/TUE-011/Jan-136</option>
+<option value="P2P">MCR/TME-308/Jan-137</option>
+<option value="P2P">KT/TUD-219/Jan-138</option>
+<option value="P2P">KT/TUD-547/Jan-139</option>
+<option value="P2P">KT/TUE-011/Jan-140</option>
+<option value="P2P">KT/TUC-092/Jan-141</option>
+<option value="P2P">KT/TUD-219/Jan-142</option>
+<option value="P2P">KT/TUD-548/Jan-143</option>
+<option value="P2P">KT/TUE-011/Jan-144</option>
+<option value="P2P">MCK/TLH-788/Jan-145</option>
+<option value="P2P">MCK/TME-303/Jan-146</option>
+<option value="P2P">KT/TUC-092/Jan-147</option>
+<option value="P2P">KT/TUD-219/Jan-148</option>
+<option value="P2P">KT/TUD-547/Jan-149</option>
+<option value="P2P">KT/TUD-548/Jan-150</option>
+<option value="P2P">KT/TUE-011/Jan-151</option>
+<option value="P2P">KT/TLG-631/Jan-152</option>
+<option value="P2P">MCK/TLH-788/Jan-153</option>
+<option value="P2P">KT/TUC-092/Jan-154</option>
+<option value="P2P">KT/TUD-219/Jan-155</option>
+<option value="P2P">KT/TUD-547/Jan-156</option>
+<option value="P2P">KT/TUD-547/Jan-157</option>
+<option value="P2P">KT/TUD-548/Jan-158</option>
+<option value="P2P">KT/TUE-011/Jan-159</option>
+<option value="P2P">MCR/TLG-632/Jan-160</option>
+<option value="P2P">KT/TUC-092/Jan-161</option>
+<option value="P2P">KT/TUD-548/Jan-162</option>
+<option value="P2P">KT/TLF-542/Jan-163</option>
+<option value="P2P">DLP/TLG-631/Jan-164</option>
+<option value="P2P">MCR/TME-308/Jan-165</option>
+<option value="P2P">KT/TUC-092/Jan-166</option>
+<option value="P2P">KT/TUD-547/Jan-167</option>
+<option value="P2P">KT/TUD-548/Jan-168</option>
+<option value="P2P">MCK/TLF-541/Feb-001</option>
+<option value="P2P">KT/TUC-092/Feb-002</option>
+<option value="P2P">KT/TUD-219/Feb-003</option>
+<option value="P2P">KT/TUD-547/Feb-004</option>
+<option value="P2P">KT/TUD-548/Feb-005</option>
+<option value="P2P">KT/TUD-548/Feb-006</option>
+<option value="P2P">KT/TUE-011/Feb-007</option>
+<option value="P2P">KT/TLF-542/Feb-008</option>
+<option value="P2P">MCK/TLH-788/Feb-009</option>
+<option value="P2P">KT/TME-304/Feb-010</option>
+<option value="P2P">KT/TME-305/Feb-011</option>
+<option value="P2P">KT/TUD-219/Feb-012</option>
+<option value="P2P">KT/TUD-547/Feb-013</option>
+<option value="P2P">KT/TUD-548/Feb-014</option>
+<option value="P2P">KT/TUE-011/Feb-015</option>
+<option value="P2P">MCR/TLF-541/Feb-016</option>
+<option value="P2P">KT/TLG-631/Feb-017</option>
+<option value="P2P">KT/TUD-219/Feb-018</option>
+<option value="P2P">KT/TUD-547/Feb-019</option>
+<option value="P2P">KT/TUD-547/Feb-020</option>
+<option value="P2P">KT/TUE-011/Feb-021</option>
+<option value="P2P">KT/TUC-092/Feb-022</option>
+<option value="P2P">KT/TUD-548/Feb-023</option>
+<option value="P2P">KT/TUE-011/Feb-024</option>
+<option value="P2P">MCR/TLF-541/Feb-025</option>
+<option value="P2P">KT/TLJ-888/Feb-026</option>
+<option value="P2P">KT/TLJ-888/Feb-027</option>
+<option value="P2P">MCR/TME-305/Feb-028</option>
+<option value="P2P">MCR/TME-308/Feb-029</option>
+<option value="P2P">KT/TUC-092/Feb-030</option>
+<option value="P2P">KT/TUD-219/Feb-031</option>
+<option value="P2P">KT/TUD-547/Feb-032</option>
+<option value="P2P">KT/TUD-548/Feb-033</option>
+<option value="P2P">KT/TUE-011/Feb-034</option>
+<option value="P2P">DLP/TLG-631/Feb-035</option>
+<option value="P2P">KT/TMG-906/Feb-036</option>
+<option value="P2P">KT/TMG-906/Feb-037</option>
+<option value="P2P">KT/TUC-092/Feb-038</option>
+<option value="P2P">KT/TUD-219/Feb-039</option>
+<option value="P2P">KT/TUD-547/Feb-040</option>
+<option value="P2P">KT/TUD-548/Feb-041</option>
+<option value="P2P">KT/TUE-011/Feb-042</option>
+<option value="P2P">MCR/TME-304/Feb-043</option>
+<option value="P2P">KT/TME-306/Feb-044</option>
+<option value="P2P">KT/TMG-907/Feb-045</option>
+<option value="P2P">KT/TUC-092/Feb-046</option>
+<option value="P2P">KT/TUD-219/Feb-047</option>
+<option value="P2P">KT/TUD-547/Feb-048</option>
+<option value="P2P">KT/TUD-548/Feb-049</option>
+<option value="P2P">KT/TUE-011/Feb-050</option>
+<option value="P2P">KT/TME-302/Feb-051</option>
+<option value="P2P">KT/TUD-219/Feb-052</option>
+<option value="P2P">KT/TUD-547/Feb-053</option>
+<option value="P2P">KT/TUE-011/Feb-054</option>
+<option value="P2P">KT/TLG-631/Feb-055</option>
+<option value="P2P">KT/TLG-632/Feb-056</option>
+<option value="P2P">KT/TUD-219/Feb-057</option>
+<option value="P2P">KT/TUD-547/Feb-058</option>
+<option value="P2P">KT/TUE-011/Feb-059</option>
+<option value="P2P">KT/TLF-542/Feb-060</option>
+<option value="P2P">KT/TLH-788/Feb-061</option>
+<option value="P2P">KT/TME-303/Feb-062</option>
+<option value="P2P">KT/TME-308/Feb-063</option>
+<option value="P2P">KT/TUD-219/Feb-064</option>
+<option value="P2P">KT/TUD-547/Feb-065</option>
+<option value="P2P">KT/TME-304/Feb-066</option>
+<option value="P2P">KT/TUD-219/Feb-067</option>
+<option value="P2P">KT/TUD-548/Feb-068</option>
+<option value="P2P">KT/TUE-011/Feb-069</option>
+<option value="P2P">KT/TUD-218/Feb-070</option>
+<option value="P2P">KT/TUD-219/Feb-071</option>
+<option value="P2P">KT/TUE-011/Feb-072</option>
+<option value="P2P">KT/TLJ-888/Feb-073</option>
+<option value="P2P">FSD/TME-302/Feb-074</option>
+<option value="P2P">KT/TME-306/Feb-075</option>
+<option value="P2P">KT/TUD-218/Feb-076</option>
+<option value="P2P">KT/TUD-219/Feb-077</option>
+<option value="P2P">KT/TUD-548/Feb-078</option>
+<option value="P2P">KT/TUE-011/Feb-079</option>
+<option value="P2P">MCR/TLG-631/Feb-080</option>
+<option value="P2P">FSD/TLG-632/Feb-081</option>
+<option value="P2P">MCK/TLH-788/Feb-082</option>
+<option value="P2P">FSD/TME-302/Feb-083</option>
+<option value="P2P">KT/TMG-907/Feb-084</option>
+<option value="P2P">KT/TUC-092/Feb-085</option>
+<option value="P2P">KT/TUD-218/Feb-086</option>
+<option value="P2P">KT/TUD-219/Feb-087</option>
+<option value="P2P">KT/TUD-548/Feb-088</option>
+<option value="P2P">KT/TUD-548/Feb-089</option>
+<option value="P2P">KT/TLF-541/Feb-090</option>
+<option value="P2P">FSD/TME-303/Feb-091</option>
+<option value="P2P">KT/TUC-092/Feb-092</option>
+<option value="P2P">KT/TUD-219/Feb-093</option>
+<option value="P2P">KT/TUD-548/Feb-094</option>
+<option value="P2P">DLP/TUE-011/Feb-095</option>
+<option value="P2P">KT/TLG-631/Feb-096</option>
+<option value="P2P">KT/TME-305/Feb-097</option>
+<option value="P2P">MCR/TME-306/Feb-098</option>
+<option value="P2P">KT/TUD-218/Feb-099</option>
+<option value="P2P">KT/TUD-219/Feb-100</option>
+<option value="P2P">KT/TUD-548/Feb-101</option>
+<option value="P2P">KT/TME-308/Feb-102</option>
+<option value="P2P">KT/TMG-906/Feb-103</option>
+<option value="P2P">KT/TUC-092/Feb-104</option>
+<option value="P2P">KT/TUD-219/Feb-105</option>
+<option value="P2P">KT/TUD-547/Feb-106</option>
+<option value="P2P">KT/TUE-011/Feb-107</option>
+<option value="P2P">KT/TLF-542/Feb-108</option>
+<option value="P2P">KT/TLJ-888/Feb-109</option>
+<option value="P2P">KT/TME-304/Feb-110</option>
+<option value="P2P">KT/TUC-092/Feb-111</option>
+<option value="P2P">KT/TUD-218/Feb-112</option>
+<option value="P2P">KT/TUD-219/Feb-113</option>
+<option value="P2P">KT/TUD-547/Feb-114</option>
+<option value="P2P">KT/TUD-548/Feb-115</option>
+<option value="P2P">KT/TUE-011/Feb-116</option>
+<option value="P2P">KT/TUD-218/Feb-117</option>
+<option value="P2P">KT/TUD-219/Feb-118</option>
+<option value="P2P">KT/TUD-547/Feb-119</option>
+<option value="P2P">KT/TUD-548/Feb-120</option>
+<option value="P2P">KT/TUE-011/Feb-121</option>
+<option value="P2P">KT/TLG-632/Feb-122</option>
+<option value="P2P">KT/TLH-788/Feb-123</option>
+<option value="P2P">KT/TME-302/Feb-124</option>
+<option value="P2P">KT/TME-303/Feb-125</option>
+<option value="P2P">MCR/TME-305/Feb-126</option>
+<option value="P2P">DLP/TMG-906/Feb-127</option>
+<option value="P2P">KT/TMG-907/Feb-128</option>
+<option value="P2P">KT/TUC-092/Feb-129</option>
+<option value="P2P">KT/TUD-218/Feb-130</option>
+<option value="P2P">KT/TUD-218/Feb-131</option>
+<option value="P2P">KT/TUD-219/Feb-132</option>
+<option value="P2P">KT/TUD-547/Feb-133</option>
+<option value="P2P">KT/TUD-548/Feb-134</option>
+<option value="P2P">KT/TUE-011/Feb-135</option>
+<option value="P2P">KT/TME-303/Feb-136</option>
+<option value="P2P">KT/TME-306/Feb-137</option>
+<option value="P2P">KT/TMG-906/Feb-138</option>
+<option value="P2P">KT/TUC-092/Feb-139</option>
+<option value="P2P">KT/TUD-219/Feb-140</option>
+<option value="P2P">KT/TUD-547/Feb-141</option>
+<option value="P2P">KT/TUD-548/Feb-142</option>
+<option value="P2P">KT/TUE-011/Feb-143</option>
+<option value="P2P">KT/TLG-631/Feb-144</option>
+<option value="P2P">MCK/TLJ-888/Feb-145</option>
+<option value="P2P">MCR/TMG-907/Feb-146</option>
+<option value="P2P">KT/TUD-218/Feb-147</option>
+<option value="P2P">KT/TUD-219/Feb-148</option>
+<option value="P2P">KT/TUE-011/Feb-149</option>
+<option value="P2P">FSD/TLG-632/Feb-150</option>
+<option value="P2P">DLP/TUC-092/Feb-151</option>
+<option value="P2P">KT/TUD-218/Feb-152</option>
+<option value="P2P">KT/TUD-219/Feb-153</option>
+<option value="P2P">KT/TUD-547/Feb-154</option>
+<option value="P2P">KT/TUE-011/Feb-155</option>
+<option value="P2P">KT/TLF-541/Feb-156</option>
+<option value="P2P">MCR/TME-303/Feb-157</option>
+<option value="P2P">KT/TME-304/Feb-158</option>
+<option value="P2P">MCR/TME-306/Feb-159</option>
+<option value="P2P">KT/TME-308/Feb-160</option>
+<option value="P2P">KT/TUD-218/Feb-161</option>
+<option value="P2P">KT/TUD-219/Feb-162</option>
+<option value="P2P">KT/TUD-547/Feb-163</option>
+<option value="P2P">KT/TME-308/Mar-001</option>
+<option value="P2P">KT/TUD-219/Mar-002</option>
+<option value="P2P">KT/TUD-547/Mar-003</option>
+<option value="P2P">KT/TUC-092/Mar-004</option>
+<option value="P2P">KT/TUD-218/Mar-005</option>
+<option value="P2P">KT/TUD-219/Mar-006</option>
+<option value="P2P">KT/TLG-632/Mar-007</option>
+<option value="P2P">KT/TLH-788/Mar-008</option>
+<option value="P2P">KT/TME-305/Mar-009</option>
+<option value="P2P">KT/TLF-542/Mar-010</option>
+<option value="P2P">KT/TME-302/Mar-011</option>
+<option value="P2P">KT/TMG-906/Mar-012</option>
+<option value="P2P">KT/TMG-907/Mar-013</option>
+<option value="P2P">KT/TUC-092/Mar-014</option>
+<option value="P2P">KT/TUD-218/Mar-015</option>
+<option value="P2P">KT/TUD-219/Mar-016</option>
+<option value="P2P">KT/TUD-547/Mar-017</option>
+<option value="P2P">KT/TUE-011/Mar-018</option>
+<option value="P2P">KT/TLG-631/Mar-019</option>
+<option value="P2P">FSD/TME-308/Mar-020</option>
+<option value="P2P">KT/TUC-092/Mar-021</option>
+<option value="P2P">KT/TUD-218/Mar-022</option>
+<option value="P2P">KT/TUD-219/Mar-023</option>
+<option value="P2P">KT/TUD-547/Mar-024</option>
+<option value="P2P">KT/TUC-092/Mar-025</option>
+<option value="P2P">KT/TUD-547/Mar-026</option>
+<option value="P2P">KT/TUE-011/Mar-027</option>
+<option value="P2P">KT/TLF-541/Mar-028</option>
+<option value="P2P">KT/TME-304/Mar-029</option>
+<option value="P2P">KT/TUD-219/Mar-030</option>
+<option value="P2P">MCK/TLF-542/Mar-031</option>
+<option value="P2P">KT/TLJ-888/Mar-032</option>
+<option value="P2P">KT/TME-306/Mar-033</option>
+<option value="P2P">KT/TME-308/Mar-034</option>
+<option value="P2P">KT/TUD-219/Mar-035</option>
+<option value="P2P">KT/TUE-011/Mar-036</option>
+<option value="P2P">KT/TLG-632/Mar-037</option>
+<option value="P2P">KT/TUC-092/Mar-038</option>
+<option value="P2P">KT/TUD-218/Mar-039</option>
+<option value="P2P">DLP/TUD-547/Mar-040</option>
+<option value="P2P">KT/TUD-548/Mar-041</option>
+<option value="P2P">KT/TUE-011/Mar-042</option>
+<option value="P2P">KT/TME-303/Mar-043</option>
+<option value="P2P">KT/TME-302/Mar-044</option>
+<option value="P2P">KT/TUC-092/Mar-045</option>
+<option value="P2P">KT/TUD-218/Mar-046</option>
+<option value="P2P">KT/TUD-219/Mar-047</option>
+<option value="P2P">KT/TUD-547/Mar-048</option>
+<option value="P2P">KT/TUE-011/Mar-049</option>
+<option value="P2P">KT/TLH-788/Mar-050</option>
+<option value="P2P">KT/TME-305/Mar-051</option>
+<option value="P2P">KT/TMG-906/Mar-052</option>
+<option value="P2P">KT/TUC-092/Mar-053</option>
+<option value="P2P">KT/TUD-218/Mar-054</option>
+<option value="P2P">KT/TUD-219/Mar-055</option>
+<option value="P2P">KT/TUD-547/Mar-056</option>
+<option value="P2P">KT/TUD-548/Mar-057</option>
+<option value="P2P">KT/TUE-011/Mar-058</option>
+<option value="P2P">KT/TLG-631/Mar-059</option>
+<option value="P2P">KT/TUC-092/Mar-060</option>
+<option value="P2P">KT/TUD-547/Mar-061</option>
+<option value="P2P">KT/TMG-907/Mar-062</option>
+<option value="P2P">KT/TUD-219/Mar-063</option>
+<option value="P2P">KT/TUD-219/Mar-064</option>
+<option value="P2P">KT/TUD-547/Mar-065</option>
+<option value="P2P">KT/TLF-542/Mar-066</option>
+<option value="P2P">KT/TME-308/Mar-067</option>
+<option value="P2P">KT/TUC-092/Mar-068</option>
+<option value="P2P">KT/TUD-548/Mar-069</option>
+<option value="P2P">KT/TUE-011/Mar-070</option>
+<option value="P2P">KT/TLG-631/Mar-071</option>
+<option value="P2P">KT/TLG-632/Mar-072</option>
+<option value="P2P">KT/TLJ-888/Mar-073</option>
+<option value="P2P">KT/TME-306/Mar-074</option>
+<option value="P2P">KT/TUC-092/Mar-075</option>
+<option value="P2P">KT/TUD-218/Mar-076</option>
+<option value="P2P">KT/TUD-219/Mar-077</option>
+<option value="P2P">KT/TUD-547/Mar-078</option>
+<option value="P2P">KT/TUD-547/Mar-079</option>
+<option value="P2P">DLP/TUD-548/Mar-080</option>
+<option value="P2P">KT/TUE-011/Mar-081</option>
+<option value="P2P">KT/TLG-632/Mar-082</option>
+<option value="P2P">KT/TME-303/Mar-083</option>
+<option value="P2P">KT/TME-302/Mar-084</option>
+<option value="P2P">KT/TME-304/Mar-085</option>
+<option value="P2P">KT/TUD-218/Mar-086</option>
+<option value="P2P">KT/TUD-219/Mar-087</option>
+<option value="P2P">KT/TUD-547/Mar-088</option>
+<option value="P2P">MCR/TMG-907/Mar-089</option>
+<option value="P2P">MCR/TMG-907/Mar-090</option>
+<option value="P2P">KT/TUC-092/Mar-091</option>
+<option value="P2P">KT/TUD-218/Mar-092</option>
+<option value="P2P">KT/TUD-219/Mar-093</option>
+<option value="P2P">KT/TUD-548/Mar-094</option>
+<option value="P2P">KT/TUE-011/Mar-095</option>
+<option value="P2P">MCR/TLG-631/Mar-096</option>
+<option value="P2P">KT/TLH-788/Mar-097</option>
+<option value="P2P">KT/TUC-092/Mar-098</option>
+<option value="P2P">KT/TUD-218/Mar-099</option>
+<option value="P2P">KT/TUD-219/Mar-100</option>
+<option value="P2P">KT/TUD-548/Mar-101</option>
+<option value="P2P">KT/TUE-011/Mar-102</option>
+<option value="P2P">KT/TUD-218/Mar-103</option>
+<option value="P2P">KT/TUD-219/Mar-104</option>
+<option value="P2P">KT/TUD-547/Mar-105</option>
+<option value="P2P">KT/TUD-548/Mar-106</option>
+<option value="P2P">KT/TLF-542/Mar-107</option>
+<option value="P2P">KT/TUC-092/Mar-108</option>
+<option value="P2P">KT/TUD-218/Mar-109</option>
+<option value="P2P">KT/TUD-219/Mar-110</option>
+<option value="P2P">KT/TUD-547/Mar-111</option>
+<option value="P2P">KT/TUD-548/Mar-112</option>
+<option value="P2P">DLP/TUE-011/Mar-113</option>
+<option value="P2P">KT/TUC-092/Mar-114</option>
+<option value="P2P">KT/TUD-218/Mar-115</option>
+<option value="P2P">KT/TUD-219/Mar-116</option>
+<option value="P2P">KT/TUD-547/Mar-117</option>
+<option value="P2P">KT/TUD-548/Mar-118</option>
+<option value="P2P">MCK/TLH-788/Mar-119</option>
+<option value="P2P">KT/TUC-092/Mar-120</option>
+<option value="P2P">KT/TUD-218/Mar-121</option>
+<option value="P2P">KT/TUD-548/Mar-122</option>
+<option value="P2P">KT/TUE-011/Mar-123</option>
+<option value="P2P">MCK/TLF-542/Mar-124</option>
+<option value="P2P">MCK/TME-304/Mar-125</option>
+<option value="P2P">KT/TME-305/Mar-126</option>
+<option value="P2P">KT/TME-308/Mar-127</option>
+<option value="P2P">KT/TMG-906/Mar-128</option>
+<option value="P2P">KT/TUD-218/Mar-129</option>
+<option value="P2P">KT/TUD-548/Mar-130</option>
+<option value="P2P">KT/TUE-011/Mar-131</option>
+<option value="P2P">KT/TLF-541/Mar-132</option>
+<option value="P2P">KT/TME-302/Mar-133</option>
+<option value="P2P">KT/TUC-092/Mar-134</option>
+<option value="P2P">KT/TUD-219/Mar-135</option>
+<option value="P2P">KT/TUD-547/Mar-136</option>
+<option value="P2P">KT/TUD-548/Mar-137</option>
+<option value="P2P">KT/TUE-011/Mar-138</option>
+<option value="P2P">KT/TLG-631/Mar-139</option>
+<option value="P2P">KT/TLG-632/Mar-140</option>
+<option value="P2P">KT/TLJ-888/Mar-141</option>
+<option value="P2P">KT/TME-306/Mar-142</option>
+<option value="P2P">KT/TMG-907/Mar-143</option>
+<option value="P2P">KT/TUC-092/Mar-144</option>
+<option value="P2P">KT/TUD-218/Mar-145</option>
+<option value="P2P">KT/TUD-219/Mar-146</option>
+<option value="P2P">KT/TUD-547/Mar-147</option>
+<option value="P2P">KT/TUD-548/Mar-148</option>
+<option value="P2P">KT/TUE-011/Mar-149</option>
+<option value="P2P">KT/TLH-788/Mar-150</option>
+<option value="P2P">KT/TUC-092/Mar-151</option>
+<option value="P2P">KT/TUD-547/Mar-152</option>
+<option value="P2P">KT/TUE-011/Mar-153</option>
+<option value="P2P">KT/TLG-632/Mar-154</option>
+<option value="P2P">KT/TME-303/Mar-155</option>
+<option value="P2P">DLP/TMG-906/Mar-156</option>
+<option value="P2P">KT/TUC-092/Mar-157</option>
+<option value="P2P">KT/TUD-218/Mar-158</option>
+<option value="P2P">KT/TUD-219/Mar-159</option>
+<option value="P2P">KT/TUD-219/Mar-160</option>
+<option value="P2P">KT/TUD-547/Mar-161</option>
+<option value="P2P">KT/TUE-011/Mar-162</option>
+<option value="P2P">KT/TUC-092/Apr-001</option>
+<option value="P2P">KT/TUD-218/Apr-002</option>
+<option value="P2P">KT/TUD-219/Apr-003</option>
+<option value="P2P">KT/TUE-011/Apr-004</option>
+<option value="P2P">KT/TME-304/Apr-005</option>
+<option value="P2P">KT/TUC-092/Apr-006</option>
+<option value="P2P">KT/TUD-219/Apr-007</option>
+<option value="P2P">KT/TUD-547/Apr-008</option>
+<option value="P2P">KT/TUE-011/Apr-009</option>
+<option value="P2P">KT/TLF-542/Apr-010</option>
+<option value="P2P">KT/TLG-631/Apr-011</option>
+<option value="P2P">KT/TME-305/Apr-012</option>
+<option value="P2P">KT/TMG-906/Apr-013</option>
+<option value="P2P">KT/TUC-092/Apr-014</option>
+<option value="P2P">KT/TUD-218/Apr-015</option>
+<option value="P2P">KT/TUD-219/Apr-016</option>
+<option value="P2P">KT/TUD-547/Apr-017</option>
+<option value="P2P">KT/TUE-011/Apr-018</option>
+<option value="P2P">KT/TLF-541/Apr-019</option>
+<option value="P2P">KT/TLG-631/Apr-020</option>
+<option value="P2P">KT/TME-302/Apr-021</option>
+<option value="P2P">KT/TME-308/Apr-022</option>
+<option value="P2P">KT/TUC-092/Apr-023</option>
+<option value="P2P">KT/TUD-218/Apr-024</option>
+<option value="P2P">KT/TUD-219/Apr-025</option>
+<option value="P2P">KT/TUD-547/Apr-026</option>
+<option value="P2P">KT/TUD-548/Apr-027</option>
+<option value="P2P">KT/TUE-011/Apr-028</option>
+<option value="P2P">KT/TME-303/Apr-029</option>
+<option value="P2P">KT/TME-306/Apr-030</option>
+<option value="P2P">KT/TUC-092/Apr-031</option>
+<option value="P2P">KT/TUD-218/Apr-032</option>
+<option value="P2P">KT/TUD-219/Apr-033</option>
+<option value="P2P">KT/TUD-547/Apr-034</option>
+<option value="P2P">KT/TUD-548/Apr-035</option>
+<option value="P2P">KT/TUE-011/Apr-036</option>
+<option value="P2P">KT/TLG-632/Apr-037</option>
+<option value="P2P">MCK/TME-304/Apr-038</option>
+<option value="P2P">KT/TUC-092/Apr-039</option>
+<option value="P2P">KT/TUD-218/Apr-040</option>
+<option value="P2P">KT/TUD-219/Apr-041</option>
+<option value="P2P">KT/TUD-547/Apr-042</option>
+<option value="P2P">KT/TUD-548/Apr-043</option>
+<option value="P2P">KT/TUE-011/Apr-044</option>
+<option value="P2P">KT/TUC-092/Apr-045</option>
+<option value="P2P">KT/TUD-219/Apr-046</option>
+<option value="P2P">KT/TUD-547/Apr-047</option>
+<option value="P2P">KT/TUD-548/Apr-048</option>
+<option value="P2P">KT/TUE-011/Apr-049</option>
+<option value="P2P">MCK/TME-303/Apr-050</option>
+<option value="P2P">KT/TMG-907/Apr-051</option>
+<option value="P2P">KT/TUC-092/Apr-052</option>
+<option value="P2P">KT/TUD-218/Apr-053</option>
+<option value="P2P">KT/TUD-219/Apr-054</option>
+<option value="P2P">KT/TUD-547/Apr-055</option>
+<option value="P2P">KT/TUD-547/Apr-056</option>
+<option value="P2P">DLP/TUD-548/Apr-057</option>
+<option value="P2P">KT/TUE-011/Apr-058</option>
+<option value="P2P">KT/TUC-092/Apr-059</option>
+<option value="P2P">KT/TUD-218/Apr-060</option>
+<option value="P2P">KT/TUD-219/Apr-061</option>
+<option value="P2P">KT/TUD-547/Apr-062</option>
+<option value="P2P">KT/TUE-011/Apr-063</option>
+<option value="P2P">KT/TLF-542/Apr-064</option>
+<option value="P2P">MCK/TLG-632/Apr-065</option>
+<option value="P2P">KT/TME-305/Apr-066</option>
+<option value="P2P">KT/TMG-906/Apr-067</option>
+<option value="P2P">MCK/TMG-907/Apr-068</option>
+<option value="P2P">KT/TUC-092/Apr-069</option>
+<option value="P2P">KT/TUD-218/Apr-070</option>
+<option value="P2P">KT/TUD-219/Apr-071</option>
+<option value="P2P">KT/TUD-547/Apr-072</option>
+<option value="P2P">KT/TME-304/Apr-073</option>
+<option value="P2P">KT/TME-308/Apr-074</option>
+<option value="P2P">KT/TUC-092/Apr-075</option>
+<option value="P2P">KT/TUD-218/Apr-076</option>
+<option value="P2P">KT/TUD-218/Apr-077</option>
+<option value="P2P">KT/TUD-219/Apr-078</option>
+<option value="P2P">KT/TUD-547/Apr-079</option>
+<option value="P2P">KT/TLF-542/Apr-080</option>
+<option value="P2P">KT/TUC-092/Apr-081</option>
+<option value="P2P">KT/TUD-547/Apr-082</option>
+<option value="P2P">KT/TLG-631/Apr-083</option>
+<option value="P2P">KT/TLJ-888/Apr-084</option>
+<option value="P2P">KT/TME-306/Apr-085</option>
+<option value="P2P">KT/TME-308/Apr-086</option>
+<option value="P2P">KT/TUD-218/Apr-087</option>
+<option value="P2P">KT/TUD-219/Apr-088</option>
+<option value="P2P">KT/TUD-547/Apr-089</option>
+<option value="P2P">KT/TUD-218/Apr-090</option>
+<option value="P2P">KT/TUD-219/Apr-091</option>
+<option value="P2P">KT/TUD-547/Apr-092</option>
+<option value="P2P">KT/TUE-011/Apr-093</option>
+<option value="P2P">KT/TUD-218/Apr-094</option>
+<option value="P2P">KT/TUD-547/Apr-095</option>
+<option value="P2P">KT/TUE-011/Apr-096</option>
+<option value="P2P">KT/TUD-218/Apr-097</option>
+<option value="P2P">KT/TUD-219/Apr-098</option>
+<option value="P2P">KT/TUE-011/Apr-099</option>
+<option value="P2P">KT/TMG-907/Apr-100</option>
+<option value="P2P">KT/TUD-218/Apr-101</option>
+<option value="P2P">KT/TUD-219/Apr-102</option>
+<option value="P2P">KT/TUD-219/Apr-103</option>
+<option value="P2P">KT/TUE-011/Apr-104</option>
+<option value="P2P">MCR/TLG-631/Apr-105</option>
+<option value="P2P">KT/TLG-632/Apr-106</option>
+<option value="P2P">KT/TLH-788/Apr-107</option>
+<option value="P2P">MCK/TME-306/Apr-108</option>
+<option value="P2P">MCR/TME-308/Apr-109</option>
+<option value="P2P">KT/TUD-547/Apr-110</option>
+<option value="P2P">KT/TME-302/Apr-111</option>
+<option value="P2P">KT/TME-303/Apr-112</option>
+<option value="P2P">KT/TUD-547/Apr-113</option>
+<option value="P2P">KT/TLF-541/Apr-114</option>
+<option value="P2P">KT/TUD-218/Apr-115</option>
+<option value="P2P">KT/TUD-219/Apr-116</option>
+<option value="P2P">KT/TUD-548/Apr-117</option>
+<option value="P2P">KT/TME-305/Apr-118</option>
+<option value="P2P">KT/TUC-092/Apr-119</option>
+<option value="P2P">KT/TUD-218/Apr-120</option>
+<option value="P2P">KT/TUD-219/Apr-121</option>
+<option value="P2P">KT/TUD-548/Apr-122</option>
+<option value="P2P">MCK/TME-303/Apr-123</option>
+<option value="P2P">KT/TME-304/Apr-124</option>
+<option value="P2P">KT/TUD-218/Apr-125</option>
+<option value="P2P">KT/TUD-219/Apr-126</option>
+<option value="P2P">KT/TUD-547/Apr-127</option>
+<option value="P2P">KT/TUD-548/Apr-128</option>
+<option value="P2P">KT/TUE-011/Apr-129</option>
+<option value="P2P">KT/TMG-906/Apr-130</option>
+<option value="P2P">KT/TLG-631/Apr-131</option>
+<option value="P2P">FSD/TMG-907/Apr-132</option>
+<option value="P2P">KT/TUD-218/Apr-133</option>
+<option value="P2P">KT/TUD-219/Apr-134</option>
+<option value="P2P">KT/TUD-547/Apr-135</option>
+<option value="P2P">KT/TUD-548/Apr-136</option>
+<option value="P2P">KT/TUE-011/Apr-137</option>
+<option value="P2P">KT/TUC-092/Apr-138</option>
+<option value="P2P">KT/TUD-218/Apr-139</option>
+<option value="P2P">KT/TUD-219/Apr-140</option>
+<option value="P2P">KT/TUD-547/Apr-141</option>
+</select></td>
+                                  </p>
+                                  <h3>Checklist Points</h3>
+                <details>
+                  <summary>  01 Documents Checking 
+                    <select><option> All are ok </option>
+                      <option> VRN Fitness certificate </option>
+                      <option> Registration Book </option>
+                      <option> Explosive License  </option>
+                      <option> Driver HTV license </option>
+                      <option> Driver DDC Training from NMHP </option>
+                      <option> Calibration Chart  </option>
+                      <option> TREM card  </option>
+                      <option> Tracker system </option>
+                      <option> Technical vetting </option></Select>
+                      </Select>
+                      
+                      
+                      
+                    <Select><option >&#10003;Available and valid</option>
+                    <option>&#10007;Available and Expired</option>
+                    <option>&#10007;Not Available</option></Select>
+                          </summary>
+                           01-01 Fitness Certificate  01-02 Registration Book  01-03 Explosive License <BR> 01-04 Driver HTV License  01-05 DDC by NHMP  01-06 Calibration Chart <BR> 01-07 Trem Card  01-08 Vehicle Tracker System  01-09 Technical Vetting Doc
+
+                                          </details>
+                <details>
+                  <summary>  02 Personnal Protective Equipment 
+                    <Select><option> All are Ok </option>
+                      <option> Safety Shoes </option>
+                      <option> Gloves </option>
+                      <option> Safety Helmet </option>
+                      <option> Safety Glasses </option>
+                      <option> High visible Jacket </option>
+                      <option> Approved clothing </option></Select>
+                      
+                    <Select><option>&#10003;Available </option>
+                    <option>&#10007;Not Available</option></Select>
+                          </summary>
+                           02-01 Safety Shoes  02-02 Gloves  02-03 Safety Helmet<br>  02-04 Safety Glasses  02-05 Visible Jacket  02-06 Uniform <br> 02-07 Spill Kit 
+
+                                          </details>
+                <details>
+                  <summary>  03 Cabin/ Wind Screen 
+                    <select><option> All are Ok </option>
+                      <option> Windshield(Free of any stickers ) </option>
+                      <option> Wind screen  free   crack </option>
+                      <option> Wipers working condition </option></Select>
+                      
+                    <Select><option>&#10003;Clean/ Crack Free / working </option>
+                    <option>&#10007;Untidy/ Crack / Not working</option></Select>
+                          </summary>
+                           03-01 Windshield is clean (Free from stickers )  03-02 Free from Cracks  03-03 Wiper working Condition
+                                          </details>
+                                          <details>
+                  <summary>  04 Mirrors Calibration position
+                    <select><option> All are ok </option>
+                      <option> 6 mirrors as per TOTAL  Rules </option>
+                      <option> Spill Kit </option></Select>
+                      <Select><option>&#10003;Available </option>
+                    <option>&#10007;Not Available</option>
+                    <option>&#10007;Cracks/Broken </option></Select>
+                          </summary> 04-01  6 mirrors as per TOTAL Rules
+                                          </details>
+                                          <details>
+                  <summary>  05 Indicators & Alarms
+  <select><option> All are OK </option>
+    <option> Head Lights  condition </option>
+    <option> Back Lights  condition </option>
+    <option> Brake lights  condition </option>
+    <option> Indicators  condition </option>
+    <option> Padel rubber condition </option>
+    <option> Both Horns  condition </option></Select>
+     <Select><option>&#10003; working </option>
+                    <option>&#10007;Dim/ Crack / Not working</option></Select>
+                          </summary>
+                         05-01 Head Light working Condition  05-02 Back Light working Condition  05-03 Brake Light working Condition <br> 05-04 Indicators working Condition  05-05 Padel rubber in good condition  05-06 Both Horns are in working condition
+ </details>
+<details>
+                    <summary>  06 Seat Belt 
+    <select><option> All are OK</option>
+      <option> Seat Belts (3 points inertia type) for Driver & Passenger </option></Select>
+    <Select><option>&#10003; working </option>
+                      <option> &#10007;Not working</option></Select>
+                            </summary>
+   06-01 Seat Belts (3 points ) for both seat
+                                            </details>
+  <details>
+                      <summary>  07 Brake 
+      <select><option> All are Ok </option>
+        <option> Hand Brake  condition </option>
+        <option> Foot Brake  condition  </option>
+        <option> Automatic trailer brake  condition </option></Select>
+      <Select><option> &#10003;working </option>
+                        <option>&#10007; Not working</option></Select>
+                              </summary>
+     07-01 Hand Brake in working condition <br> 07-02 Foot Brake in working condition <br>  07-03 Automatic trailer brake is in working condition
+                                              </details>
+    <details>
+                      <summary>  08Fire Extinguisher & First Aid  
+      <select><option> All are Ok </option>
+        <option> 2KG fire extinguisher cabin</option>
+        <option> First Aid Box </option>
+        <option> 02 Fire extinguishers</option></Select>
+        <Select><option>&#10003; working/Available </option>
+                        <option>&#10007; Not working</option>
+                        <option> &#10007;Not Available</option></Select>
+     </summary> 08-01 DCP (ABC type) or CO2 fire extinguisher in the cabin <br> 08-02 First Aid Box with necessary medicines <br> 08-03 02 DCP Fire extinguishers both side of the tanker
+                      </details>
+                      <details>
+                      <summary>  09 Battery & Terminal 
+        <select><option> All are OK</option>
+          <option> Batter Cut off </option>
+          <option> Battery Cover & proper battery terminals  </option></Select>
+      <Select><option> &#10003;working </option>
+                          <option> &#10007;Not working</option></Select>
+                                </summary>
+       09-01 Batter Cut off available and working  09-02 Battery Cover & proper battery terminals available
+                                                </details>
+      <details>
+       <summary>  10 Flame / Spark Arrestor 
+        <select><option> All are OK </option>
+          <option> Spark/ Flame arrestor on silencer  </option>
+          <option> valves  opposite  of exhaust system </option></Select>
+        <Select><option> &#10003;Available </option>
+      <option>&#10007; Not Available</option></Select>
+      </summary>
+       10-01 Proper Spark/ Flame arrestor on silencer available <br> 10-02 Product valves in opposite direction of exhaust system
+     </details>
+      <details>
+       <summary>  11 Fifth wheel / King Pin  
+        <select><option> All are Ok  </option>
+          <option> Grease &  Spacing  </option>
+          <option> cracks </option>
+          <option> Handle locked & closed position </option>
+          <option> Padlock / hook </option></Select>
+          <Select><option>&#10003; Greasing/ not Gap </option>
+                          <option>&#10007; Non Greasing/  Gap</option></Select>
+                                </summary>
+       11-01 Well Greased & No Spacing between plates and fifth wheel <br> 11-02 Absence of cracks  11-03 Handle is locked and in closed position <br> 11-04 Padlock / hook is availble
+                                                </details>
+      <details>
+                        <summary>  12 Tank Condition 
+        <select><option> Tank Condition </option>
+          <option> Paint condition  </option>
+          <option> Side/ Rear guard </option>
+          <option> Dents/cracks (welds & leaks) </option>
+          <option> Not used for MOGAS/HOBC if last load was furnace  </option>
+          <option> Duty officer phone number </option>
+          <option> Marking & Stickers </option>
+          <option> Decanting caps (dust caps, seals, welding) </option></Select>
+          <Select><option>&#10003;Good Condition/Crack Free</option>
+                          <option>&#10007;Bad Condition/Crack </option></Select>
+       </summary>
+       12-01 Paint condition is satisfactory <br> 12-02 Side/ Rear guard available <br> 12-03 Absence of dents / cracks & condition of welds & leaks <br> 12-04 Tank Truck is not used for MOGAS/HOBC if last load was furnace oil <br> 12-05 Duty officer phone number <br> 12-06 Marking & Stickers <br> 12-07 Decanting valve caps (dust caps) seals, welding, .
+     </details>
+      <details>
+                          <summary>  13 Earth Strip 
+          <select><option> All are ok </option>
+            <option> Earth Strip Condition</option>
+            <option> Earth Strip Rust & paint free </option></Select>
+                      <Select><option> &#10003;working & Rust Free </option>
+                            <option> &#10007;Not working/ Rusted</option></Select>
+                                  </summary>
+         13-01 Earth Strip is present  13-02 Earth Strip is Rust and paint free  14-01 Satisfactory wiring insulation
+                                                  </details>
+        <details>
+                          <summary>  14 Condition of Electrical Wiring 
+          <select><option> All are OK </option>
+            <option> wiring insulation </option></Select>
+            
+          
+          
+          <Select><option> &#10003;Satisfactory  </option>
+                            <option> &#10007;UnSatisfactory</option></Select>
+                                  </summary>
+         14-01 Satisfactory wiring insulation
+                                                  </details>
+        <details>
+                          <summary>  15 Tyre Condition
+          <select><option> All are ok  </option>
+            <option> Tread Greater than 3mm deep </option>
+            <option> Same type of tire on each axle </option>
+            <option> Tyre do not have cuts </option>
+            <option> Rims  cracks & all wheel nuts Tightened </option>
+            <option> Spare tyre  good condition </option>
+            <option> All wheel nuts/torque indicators  </option></Select>
+            <Select><option> &#10003;Good </option>
+                            <option> &#10007; Not Good</option></Select>
+                                  </summary>
+         15-01 Tread must be at least 3mm deep  15-02 Same type of tire on each axle  15-03 Tyre do not have cuts  15-04 Rims are without cracks & all wheel nuts available and Tightened  15-05 Spare tyre available and in good condition  15-06 All wheel nuts/torque indicators are available
+                                                  </details>
+        <details>
+                          <summary>  16 Hose Condition
+          <select><option> All are ok </option>
+            <option> Hose Condition </option></Select>
+             <Select><option>&#10003;Good Condition/Leakage Free</option>
+                            <option>&#10007;Bad Condition/Crack </option></Select>
+                                  </summary>
+         16-01 Hose Condition is satisfactory
+                                                  </details>
+        <details>
+                          <summary>  17 Safety Railing
+          <select><option> All are Ok </option>
+            <option> Railing and Ladder  on tank compartment </option></Select>
+          <Select><option>&#10003; working </option>
+                            <option> &#10007; Not working</option></Select>
+                                  </summary>
+         17-01 Railing and Ladder available on tank compartment 
+                                                  </details>
+        <details>
+                            <summary>  18 Safety Cone 
+            <select><option> All are Ok </option>
+              <option> Safety Cones (min. 06 cones) </option></Select>
+            <Select><option> &#10003;Available </option>
+                              <option>&#10007; Not Available</option></Select>
+                                    </summary>
+           18-01 Safety Cones available (min. 03 cones) 
+                                                    </details>
+          <details>
+                            <summary>  19 Wheel Chok
+            <select><option> All are Ok </option>
+              <option> Wheel chocks (02 Nos.) </option></Select> 
+              <Select><option>&#10003;Good Condition </option>
+                              <option> &#10007;NotGood</option></Select>
+                                    </summary>
+           19-01 Wheel chocks (02 Nos.) available
+                                                    </details>
+          <details>
+                            <summary>  20 Bottom Valve
+            <select><option> All are Ok </option>
+              <option> bottom safety valves and emergency cut off </option></Select>
+            <Select><option> &#10003;No Leakage </option>
+                              <option> &#10007; Leakage</option></Select>
+                                    </summary>
+           20-01 Bottom safety valves and emergency cut off condition
+                                                    </details>
+                                              <tr>
+                                              <th class="text-left">Remarks</th>
+                                              
+                                              <td class="text-right text-primary">
+                                                  <select name="Available">
+                                                      <option value="P2P">Vehicle is Ready for Load</option>
+                                                      <option value="P2C">Vehicle is not Ready for Load</option>
+                                                             </select>
+                                              </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                              
+                      </div>
+                  </div>
+                  
+    
+    <!-- Other form fields -->
+    
+    <!-- Picture upload -->
+    <!-- <fieldset>
+      <legend>Evidence</legend>
+
+      
+      <label for="file1">Upload Picture 1:</label>
+    <input type="file" id="file1" name="file1" accept="image/*" onchange="previewImage('file1', 'preview1')" required>
+    <img id="preview1" class="preview" alt="Preview Image 1">
+
+    <br><label for="file2">Upload Picture 2:</label>
+    <input type="file" id="file2" name="file2" accept="image/*" onchange="previewImage('file2', 'preview2')" required>
+    <img id="preview2" class="preview" alt="Preview Image 2">
+
+    <br><label for="file3">Upload Picture 3:</label>
+    <input type="file" id="file3" name="file3" accept="image/*" onchange="previewImage('file3', 'preview3')" required>
+    <img id="preview3" class="preview" alt="Preview Image 3">
+
+    <br><label for="file4">Upload Picture 4:</label>
+    <input type="file" id="file4" name="file4" accept="image/*" onchange="previewImage('file4', 'preview4')" required>
+    <img id="preview4" class="preview" alt="Preview Image 4">
+      <!-- Repeat the above pattern for file2, file3, and file4 -->
+    </fieldset>
+    
+    <!-- Other form fields -->
+     
+    <div class="card-footer">
+      <span class="text-muted">Copyright@Jaad Hashmi<BR>
+        Safe to Load (STL) is computer generated and does not require the Inspector’s signature or
+        the Company’s stamp (Ibrahim Oil Carriers) in order to be considered valid. <br>
+        Powered by IOC Team
+      </span>
+    </div>
+  </form>
+
+</div>
+
+<button onclick="printForm()">Print STL Form</button>
+
+<script>
+  function printForm() {
+    window.print();
+  }
+
+  function previewImage(input, preview) {
+    const fileInput = document.getElementById(input);
+    const previewImg = document.getElementById(preview);
+    const file = fileInput.files[0];
+    const reader = new FileReader();
+
+    reader.onloadend = function () {
+      previewImg.src = reader.result;
+    };
+
+    if (file) {
+      reader.readAsDataURL(file);
+    } else {
+      previewImg.src = "";
+    }
+  }
+</script>
+
+</body>
+</html>
