@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Print STL Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      border: 2px; 
+    }
+
+   
+    form {
+      max-width: 950px;
+      width: 100%;
+      background-color: #f2f1f3;
+      padding: 2px;
+      display:block;
+      margin-bottom: 5px;
+      border-radius: 8px;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    }
+
+    .file-upload {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .preview {
+      max-width: 100%;
+      height: auto; /* Set height to auto for responsive scaling */
+      margin-bottom: 1px;
+      margin-top: 1px;
+    }
+    
+    .card-footer {
+      background-color: #f0f1ed;
+      color: #1d0101;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button {
+      background-color: #008CBA;
+      color: #fff;
+      padding: 3px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    label {
+      display:inline-table;
+      margin-bottom: 1px;
+    }
+
+    input {
+      width: 25%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    
+    
+    input[type="file"] {
+      width: calc(50% - 20px);
+    }
+    .preview {
+    max-width: 20%;
+    height: auto; /* Set height to auto for responsive scaling */
+    margin-bottom: 1px;
+    margin-top: 1px;
+  }
+
+  /* Additional CSS for responsive design */
+  @media only screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens if needed */
+    .bio-data {
+      padding: 2px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+    }
+  }
+  .responsive-image{max-width: 100%;height: auto;}
+  .responsive1-image{max-width: 100%;height: Auto;}
+  body {
+      font-family: Arial, sans-serif;
+      border: 2px; 
+    }
+    
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 2px;
+      padding: 1px;
+    }
+
+    .box {
+  background-color: #73d0f5;
+  padding: 1px;
+  border: 2px solid #6bfc46;
+  border-radius: 5px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  text-align: right; /* Align text to the right */
+}
+.text-right {
+    text-align: center;
+}
+
+h4, select {
+    display: inline-table;
+    vertical-align: middle;
+}
+
+   
+
+    /* Additional styling for responsive design */
+    @media only screen and (max-width: 600px) {
+      .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+        
+  </style>
+</head>
+<body>
+
+<div class="bio-data">
+   
+  <form id="myForm">
+    <img src="Images/Logo.jpeg"alt=""class="responsive-image">
+    <h3>TL Basic Details</h3> 
+    <p>VRN:
+          <td><select name="Available">
+            <option value="P2P">TUC-092</option>
+            <option value="P2C">TUD-218</option>
+            <option value="P2P">TUD-219</option>
+            <option value="P2C">TUD-547</option>
+            <option value="P2P">TUD-548</option>
+            <option value="P2C">TUE-011</option>
+            <option value="P2P">TLH-788</option>
+            <option value="P2C">TLJ-888</option>
+            <option value="P2P">TLG-631</option>
+            <option value="P2C">TLG-632</option>
+            <option value="P2P">TLF-541</option>
+            <option value="P2C">TLF-542</option>
+            <option value="P2P">TME-302</option>
+            <option value="P2C">TME-303</option>
+            <option value="P2P">TME-304</option>
+            <option value="P2C">TME-305</option>
+            <option value="P2P">TME-306</option>
+            <option value="P2C">TME308</option>
+            <option value="P2P">TMG-906</option>
+            <option value="P2C">TMG-907</option>
+                   </select> </td>
+        </select>
+        Inspector Name:
+          <td><select name="Available">
+            <option value="P2P">Jawed Brohi</option>
+            <option value="P2C">Muhammad Ali</option>
+            <option value="P2P">Gul Sher</option>
+            <option value="P2C">Jawwad Ali hashmi</option>
+            <option value="P2P">Muhammad Immad</option>
+            <option value="P2C">Sharjeel Ahmed</option>
+            <option value="P2P">Muhammad Ibrahim Khan</option>
+            <option value="P2C">Abdul Majeed</option>
+            <option value="P2C">Abdul Khaliq</option>
+           
+                   </select> </td>
+        </select>
+      </select>
+      STL Date :
+        <td><input type="date"></td>
+      </select><br>
+              </p>
+              <p>Driver 1 name:
+                <input type="text" name="Driver 1 name" size="30"
+                  maxlength="30" />
+                  Driver 2 name:
+                  <input type="text" name="Driver 2 name" size="30"
+                  maxlength="30" />
+                </p>
+                <p>Metre Reading:
+                  <input type="number" name="number" size="15"
+                  maxlength="8" />
+                  STL Form #:
+                  <input type="number" name="IOC/STL/number" size="15"
+                  maxlength="8" />
+                  <h2>Checklist Points</h2>
+                </p>
+                <details>
+                  <summary>  01 Documents Checking 
+                    <select><option> All are ok </option>
+                      <option> VRN Fitness certificate </option>
+                      <option> Registration Book </option>
+                      <option> Explosive License  </option>
+                      <option> Driver HTV license </option>
+                      <option> Driver DDC Training from NMHP </option>
+                      <option> Calibration Chart  </option>
+                      <option> TREM card  </option>
+                      <option> Tracker system </option>
+                      <option> Technical vetting </option></Select>
+                      </Select>
+                      
+                      
+                      
+                    <Select><option >&#10003;Available and valid</option>
+                    <option>&#10007;Available and Expired</option>
+                    <option>&#10007;Not Available</option></Select>
+                          </summary>
+                           01-01 Fitness Certificate  01-02 Registration Book  01-03 Explosive License <BR> 01-04 Driver HTV License  01-05 DDC by NHMP  01-06 Calibration Chart <BR> 01-07 Trem Card  01-08 Vehicle Tracker System  01-09 Technical Vetting Doc
+
+                                          </details>
+                <details>
+                  <summary>  02 Personnal Protective Equipment 
+                    <Select><option> All are Ok </option>
+                      <option> Safety Shoes </option>
+                      <option> Gloves </option>
+                      <option> Safety Helmet </option>
+                      <option> Safety Glasses </option>
+                      <option> High visible Jacket </option>
+                      <option> Approved clothing </option></Select>
+                      
+                    <Select><option>&#10003;Available </option>
+                    <option>&#10007;Not Available</option></Select>
+                          </summary>
+                           02-01 Safety Shoes  02-02 Gloves  02-03 Safety Helmet<br>  02-04 Safety Glasses  02-05 Visible Jacket  02-06 Uniform <br> 02-07 Spill Kit 
+
+                                          </details>
+                <details>
+                  <summary>  03 Cabin/ Wind Screen 
+                    <select><option> All are Ok </option>
+                      <option> Windshield(Free of any stickers ) </option>
+                      <option> Wind screen  free   crack </option>
+                      <option> Wipers working condition </option></Select>
+                      
+                    <Select><option>&#10003;Clean/ Crack Free / working </option>
+                    <option>&#10007;Untidy/ Crack / Not working</option></Select>
+                          </summary>
+                           03-01 Windshield is clean (Free from stickers )  03-02 Free from Cracks  03-03 Wiper working Condition
+                                          </details>
+                                          <details>
+                  <summary>  04 Mirrors Calibration position
+                    <select><option> All are ok </option>
+                      <option> 6 mirrors as per TOTAL  Rules </option>
+                      <option> Spill Kit </option></Select>
+                      <Select><option>&#10003;Available </option>
+                    <option>&#10007;Not Available</option>
+                    <option>&#10007;Cracks/Broken </option></Select>
+                          </summary> 04-01  6 mirrors as per TOTAL Rules
+                                          </details>
+                                          <details>
+                  <summary>  05 Indicators & Alarms
+  <select><option> All are OK </option>
+    <option> Head Lights  condition </option>
+    <option> Back Lights  condition </option>
+    <option> Brake lights  condition </option>
+    <option> Indicators  condition </option>
+    <option> Padel rubber condition </option>
+    <option> Both Horns  condition </option></Select>
+     <Select><option>&#10003; working </option>
+                    <option>&#10007;Dim/ Crack / Not working</option></Select>
+                          </summary>
+                         05-01 Head Light working Condition  05-02 Back Light working Condition  05-03 Brake Light working Condition <br> 05-04 Indicators working Condition  05-05 Padel rubber in good condition  05-06 Both Horns are in working condition
+ </details>
+<details>
+                    <summary>  06 Seat Belt 
+    <select><option> All are OK</option>
+      <option> Seat Belts (3 points inertia type) for Driver & Passenger </option></Select>
+    <Select><option>&#10003; working </option>
+                      <option> &#10007;Not working</option></Select>
+                            </summary>
+   06-01 Seat Belts (3 points ) for both seat
+                                            </details>
+  <details>
+                      <summary>  07 Brake 
+      <select><option> All are Ok </option>
+        <option> Hand Brake  condition </option>
+        <option> Foot Brake  condition  </option>
+        <option> Automatic trailer brake  condition </option></Select>
+      <Select><option> &#10003;working </option>
+                        <option>&#10007; Not working</option></Select>
+                              </summary>
+     07-01 Hand Brake in working condition <br> 07-02 Foot Brake in working condition <br>  07-03 Automatic trailer brake is in working condition
+                                              </details>
+    <details>
+                      <summary>  08Fire Extinguisher & First Aid  
+      <select><option> All are Ok </option>
+        <option> 2KG fire extinguisher cabin</option>
+        <option> First Aid Box </option>
+        <option> 02 Fire extinguishers</option></Select>
+        <Select><option>&#10003; working/Available </option>
+                        <option>&#10007; Not working</option>
+                        <option> &#10007;Not Available</option></Select>
+     </summary> 08-01 DCP (ABC type) or CO2 fire extinguisher in the cabin <br> 08-02 First Aid Box with necessary medicines <br> 08-03 02 DCP Fire extinguishers both side of the tanker
+                      </details>
+                      <details>
+                      <summary>  09 Battery & Terminal 
+        <select><option> All are OK</option>
+          <option> Batter Cut off </option>
+          <option> Battery Cover & proper battery terminals  </option></Select>
+      <Select><option> &#10003;working </option>
+                          <option> &#10007;Not working</option></Select>
+                                </summary>
+       09-01 Batter Cut off available and working  09-02 Battery Cover & proper battery terminals available
+                                                </details>
+      <details>
+       <summary>  10 Flame / Spark Arrestor 
+        <select><option> All are OK </option>
+          <option> Spark/ Flame arrestor on silencer  </option>
+          <option> valves  opposite  of exhaust system </option></Select>
+        <Select><option> &#10003;Available </option>
+      <option>&#10007; Not Available</option></Select>
+      </summary>
+       10-01 Proper Spark/ Flame arrestor on silencer available <br> 10-02 Product valves in opposite direction of exhaust system
+     </details>
+      <details>
+       <summary>  11 Fifth wheel / King Pin  
+        <select><option> All are Ok  </option>
+          <option> Grease &  Spacing  </option>
+          <option> cracks </option>
+          <option> Handle locked & closed position </option>
+          <option> Padlock / hook </option></Select>
+          <Select><option>&#10003; Greasing/ not Gap </option>
+                          <option>&#10007; Non Greasing/  Gap</option></Select>
+                                </summary>
+       11-01 Well Greased & No Spacing between plates and fifth wheel <br> 11-02 Absence of cracks  11-03 Handle is locked and in closed position <br> 11-04 Padlock / hook is availble
+                                                </details>
+      <details>
+                        <summary>  12 Tank Condition 
+        <select><option> Tank Condition </option>
+          <option> Paint condition  </option>
+          <option> Side/ Rear guard </option>
+          <option> Dents/cracks (welds & leaks) </option>
+          <option> Not used for MOGAS/HOBC if last load was furnace  </option>
+          <option> Duty officer phone number </option>
+          <option> Marking & Stickers </option>
+          <option> Decanting caps (dust caps, seals, welding) </option></Select>
+          <Select><option>&#10003;Good Condition/Crack Free</option>
+                          <option>&#10007;Bad Condition/Crack </option></Select>
+       </summary>
+       12-01 Paint condition is satisfactory <br> 12-02 Side/ Rear guard available <br> 12-03 Absence of dents / cracks & condition of welds & leaks <br> 12-04 Tank Truck is not used for MOGAS/HOBC if last load was furnace oil <br> 12-05 Duty officer phone number <br> 12-06 Marking & Stickers <br> 12-07 Decanting valve caps (dust caps) seals, welding, .
+     </details>
+      <details>
+                          <summary>  13 Earth Strip 
+          <select><option> All are ok </option>
+            <option> Earth Strip Condition</option>
+            <option> Earth Strip Rust & paint free </option></Select>
+                      <Select><option> &#10003;working & Rust Free </option>
+                            <option> &#10007;Not working/ Rusted</option></Select>
+                                  </summary>
+         13-01 Earth Strip is present  13-02 Earth Strip is Rust and paint free  14-01 Satisfactory wiring insulation
+                                                  </details>
+        <details>
+                          <summary>  14 Condition of Electrical Wiring 
+          <select><option> All are OK </option>
+            <option> wiring insulation </option></Select>
+            
+          
+          
+          <Select><option> &#10003;Satisfactory  </option>
+                            <option> &#10007;UnSatisfactory</option></Select>
+                                  </summary>
+         14-01 Satisfactory wiring insulation
+                                                  </details>
+        <details>
+                          <summary>  15 Tyre Condition
+          <select><option> All are ok  </option>
+            <option> Tread Greater than 3mm deep </option>
+            <option> Same type of tire on each axle </option>
+            <option> Tyre do not have cuts </option>
+            <option> Rims  cracks & all wheel nuts Tightened </option>
+            <option> Spare tyre  good condition </option>
+            <option> All wheel nuts/torque indicators  </option></Select>
+            <Select><option> &#10003;Good </option>
+                            <option> &#10007; Not Good</option></Select>
+                                  </summary>
+         15-01 Tread must be at least 3mm deep  15-02 Same type of tire on each axle  15-03 Tyre do not have cuts  15-04 Rims are without cracks & all wheel nuts available and Tightened  15-05 Spare tyre available and in good condition  15-06 All wheel nuts/torque indicators are available
+                                                  </details>
+        <details>
+                          <summary>  16 Hose Condition
+          <select><option> All are ok </option>
+            <option> Hose Condition </option></Select>
+             <Select><option>&#10003;Good Condition/Leakage Free</option>
+                            <option>&#10007;Bad Condition/Crack </option></Select>
+                                  </summary>
+         16-01 Hose Condition is satisfactory
+                                                  </details>
+        <details>
+                          <summary>  17 Safety Railing
+          <select><option> All are Ok </option>
+            <option> Railing and Ladder  on tank compartment </option></Select>
+          <Select><option>&#10003; working </option>
+                            <option> &#10007; Not working</option></Select>
+                                  </summary>
+         17-01 Railing and Ladder available on tank compartment 
+                                                  </details>
+        <details>
+                            <summary>  18 Safety Cone 
+            <select><option> All are Ok </option>
+              <option> Safety Cones (min. 06 cones) </option></Select>
+            <Select><option> &#10003;Available </option>
+                              <option>&#10007; Not Available</option></Select>
+                                    </summary>
+           18-01 Safety Cones available (min. 03 cones) 
+                                                    </details>
+          <details>
+                            <summary>  19 Wheel Chok
+            <select><option> All are Ok </option>
+              <option> Wheel chocks (02 Nos.) </option></Select> 
+              <Select><option>&#10003;Good Condition </option>
+                              <option> &#10007;NotGood</option></Select>
+                                    </summary>
+           19-01 Wheel chocks (02 Nos.) available
+                                                    </details>
+          <details>
+                            <summary>  20 Bottom Valve
+            <select><option> All are Ok </option>
+              <option> bottom safety valves and emergency cut off </option></Select>
+            <Select><option> &#10003;No Leakage </option>
+                              <option> &#10007; Leakage</option></Select>
+                                    </summary>
+           20-01 Bottom safety valves and emergency cut off condition
+                                                    </details>
+                                              <tr>
+                                              <th class="text-left">Remarks</th>
+                                              
+                                              <td class="text-right text-primary">
+                                                  <select name="Available">
+                                                      <option value="P2P">Vehicle is Ready for Load</option>
+                                                      <option value="P2C">Vehicle is not Ready for Load</option>
+                                                             </select>
+                                              </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                              
+                      </div>
+                  </div>
+                  
+    
+    <!-- Other form fields -->
+    
+    <!-- Picture upload -->
+    <fieldset>
+      <legend>Evidence</legend>
+
+      
+      <label for="file1">Upload Picture 1:</label>
+    <input type="file" id="file1" name="file1" accept="image/*" onchange="previewImage('file1', 'preview1')" required>
+    <img id="preview1" class="preview" alt="Preview Image 1">
+
+    <br><label for="file2">Upload Picture 2:</label>
+    <input type="file" id="file2" name="file2" accept="image/*" onchange="previewImage('file2', 'preview2')" required>
+    <img id="preview2" class="preview" alt="Preview Image 2">
+
+    <br><label for="file3">Upload Picture 3:</label>
+    <input type="file" id="file3" name="file3" accept="image/*" onchange="previewImage('file3', 'preview3')" required>
+    <img id="preview3" class="preview" alt="Preview Image 3">
+
+    <br><label for="file4">Upload Picture 4:</label>
+    <input type="file" id="file4" name="file4" accept="image/*" onchange="previewImage('file4', 'preview4')" required>
+    <img id="preview4" class="preview" alt="Preview Image 4">
+      <!-- Repeat the above pattern for file2, file3, and file4 -->
+    </fieldset>
+    
+    <!-- Other form fields -->
+    
+    <div class="card-footer">
+      <span class="text-muted">Copyright@Jaad Hashmi<BR>
+        Safe to Load (STL) is computer generated and does not require the Inspector’s signature or
+        the Company’s stamp (Ibrahim Oil Carriers) in order to be considered valid. <br>
+        Powered by IOC Team
+      </span>
+    </div>
+  </form>
+
+</div>
+
+<button onclick="printForm()">Print STL Form</button>
+
+<script>
+  function printForm() {
+    window.print();
+  }
+
+  function previewImage(input, preview) {
+    const fileInput = document.getElementById(input);
+    const previewImg = document.getElementById(preview);
+    const file = fileInput.files[0];
+    const reader = new FileReader();
+
+    reader.onloadend = function () {
+      previewImg.src = reader.result;
+    };
+
+    if (file) {
+      reader.readAsDataURL(file);
+    } else {
+      previewImg.src = "";
+    }
+  }
+</script>
+
+</body>
+</html>

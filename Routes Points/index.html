@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Routes Details</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url('./image/download.jpg'); /* Set the background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for better contrast */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .button-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  .button-list li {
+    margin: 10px;
+    text-align: center;
+    width: 100%; /* Initially buttons will take full width */
+  }
+  .button-list a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Initially buttons will take full width */
+    padding: 15px 20px; /* Adjusted padding */
+    font-size: 16px; /* Adjusted font size */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+  }
+  .button-list a:hover {
+    background-color: #0056b3;
+  }
+
+  /* Media query for responsiveness */
+  @media screen and (min-width: 500px) {
+    .button-list li {
+      width: calc(50% - 20px); /* Two buttons per row on screens wider than 500px */
+    }
+  }
+  @media screen and (min-width: 800px) {
+    .button-list li {
+      width: calc(33.33% - 20px); /* Three buttons per row on screens wider than 800px */
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2 class="heading">Ibrahim Oil Carrier <br> Details Journey Portal</h2>
+  <ul class="button-list">
+    <li><a href="https://www.google.com/maps/d/edit?mid=12vmmp0_Vx38SfWEPgaJ7S6pi7K00ZDY&usp=sharing" class="button">Journey Portal</a></li>
+    
+    
+  </ul>
+</div>
+
+</body>
+</html>

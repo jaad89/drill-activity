@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Video Form</title>
+<style>
+    /* Add your CSS styles here */
+    @font-face {
+        font-family: 'Jamil Noor';
+        src: url('./Alvi\ Nastaleeq\ Regular/#quiz-container') format('truetype');
+        /* Add additional src lines for different font weights or styles */
+    }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+    }
+
+    h1, h2, h3 {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    #video-container, #quiz-container, #result-container, #bio-data-container, #certificate-container {
+        margin: 20px auto;
+        width: 80%;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #quiz-container, #result-container, #bio-data-container, #certificate-container {
+        display: none;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input[type="text"], input[type="radio"] {
+        margin-bottom: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .correct-answer {
+        color: green;
+    }
+
+    .wrong-answer {
+        color: red;
+    }
+
+    .certificate {
+        border: 2px solid #000;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Responsive image CSS */
+    img {
+        max-width: 50%;
+        height: auto;
+    }
+
+    /* Responsive video CSS */
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+</head>
+<body>
+
+<div id="video-container">
+    <!-- Embedded Video Player -->
+    <video id="myVideo" width="640" height="360" controls>
+        <source src="Drill 24.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<div id="quiz-container">
+    <!-- Quiz Section -->
+    <h2>Drill 2024 Assessment Quiz</h2>
+    <form id="quiz-form">
+        <!-- Add your quiz questions here -->
+        <label>ڈرل 2024 کہاں پر ہوئی تھی؟</label><br>
+        <input type="radio" id="answer1a" name="answer1" value="a">
+        <label for="answer1a">a)محمودکوٹ</label><br>
+        <input type="radio" id="answer1b" name="answer1" value="b">
+        <label for="answer1b">b) کراچی</label><br>
+
+        <label>ٹو لائن کا فائدہ ہوتاہے ؟</label><br>
+        <input type="radio" id="answer2a" name="answer2" value="a">
+        <label for="answer2a">a) جی ہاں</label><br>
+        <input type="radio" id="answer2b" name="answer2" value="b">
+        <label for="answer2b">b) بلکل نہیں</label><br>
+
+        <label> گاڑی میں لگنے والی آگ کو پانی سے ختم کیا جاسکتاہے؟</label><br>
+        <input type="radio" id="answer3a" name="answer3" value="a">
+        <label for="answer3a">a) جی ہاں</label><br>
+        <input type="radio" id="answer3b" name="answer3" value="b">
+        <label for="answer3b">b) بالکل نہیں</label><br>
+
+        <label>: گاڑی میں آگ کیسے لگی؟</label><br>
+        <input type="radio" id="answer4a" name="answer4" value="a">
+        <label for="answer4a">a) مال کو چوری کرتے ہوئے؟</label><br>
+        <input type="radio" id="answer4b" name="answer4" value="b">
+        <label for="answer4b">b)بجلی سے</label><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<div id="result-container">
+    <!-- Quiz Result Section -->
+    <h2>Quiz Results</h2>
+    <p id="quiz-results"></p>
+</div>
+
+<div id="bio-data-container">
+    <!-- Bio Data Form -->
+    <h2>Enter Your Bio Data</h2>
+    <form id="bio-data-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+        <label for="vrn">VRN:</label>
+        <input type="text" id="vrn" required><br>
+        <label for="designation">Designation:</label>
+        <input type="text" id="designation" required><br>
+        <button type="submit">Generate Certificate</button>
+    </form>
+</div>
+
+<div id="certificate-container">
+    <!-- Certificate Display -->
+    <div class="certificate">
+        <img src="WhatsApp Image 2023-09-25 at 12.41.04.jpeg">
+        <h2>Drill 2024 Assessment Certificate</h2>
+        <p id="certificate-info"></p>
+        <p id="certificate-score"></p> <!-- Added score paragraph -->
+        <button id="print-certificate">Print Certificate</button>
+    </div>
+</div>
+
+<script>
+    const videoContainer = document.getElementById('video-container');
+    const quizContainer = document.getElementById('quiz-container');
+
+    // Event listener for video end
+    document.getElementById('myVideo').addEventListener('ended', function() {
+        videoContainer.style.display = 'none';
+        quizContainer.style.display = 'block';
+    });
+
+    // Quiz questions and answers
+    const quizQuestions = [
+        { question: "What is 2 + 2?", options: ["a) 3", "b) 4"], answer: "a" },
+        { question: "What is the capital of France?", options: ["a) محمودکوٹ", "b) Paris"], answer: "a" },
+        { question: "What is the capital of Japan?", options: ["a) Beijing", "b) Tokyo", ], answer: "b" },
+        { question: "What is 7 * 8?", options: ["a) 42", "b) 56"], answer: "a" }
+        // Add more questions as needed
+    ];
+
+    function checkScore(score, totalQuestions) {
+        const percentage = (score / totalQuestions) * 100;
+        if (percentage < 75) {
+            return false; // Score is less than 75%
+        }
+        return true; // Score is 75% or higher
+    }
+
+    const quizResults = document.getElementById('quiz-results');
+    const bioDataForm = document.getElementById('bio-data-form');
+    const certificateInfo = document.getElementById('certificate-info');
+    const certificateScore = document.getElementById('certificate-score'); // Added certificate score
+
+    // Event listener for quiz submission
+    document.getElementById('quiz-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        let score = 0;
+        let resultHTML = '';
+        for (let i = 0; i < quizQuestions.length; i++) {
+            const userAnswer = document.querySelector(`input[name='answer${i+1}']:checked`);
+            if (userAnswer) {
+                if (userAnswer.value === quizQuestions[i].answer) {
+                    score++;
+                    resultHTML += `<li>Question ${i+1}: <span class="correct-answer">${userAnswer.value}</span> - Correct!</li>`;
+                } else {
+                    resultHTML += `<li>Question ${i+1}: <span class="wrong-answer">${userAnswer.value}</span> - Incorrect!</li>`;
+                }
+            } else {
+                resultHTML += `<li>Question ${i+1}: Not answered</li>`;
+            }
+        }
+        const totalQuestions = quizQuestions.length;
+        const percentage = ((score / totalQuestions) * 100).toFixed(2);
+        quizResults.innerHTML = `<p>You scored ${score} out of ${totalQuestions} (${percentage}%)</p><ul>${resultHTML}</ul>`;
+
+        const successful = checkScore(score, totalQuestions);
+
+        if (successful) {
+            document.getElementById('result-container').style.display = 'block';
+            document.getElementById('bio-data-container').style.display = 'block';
+        } else {
+            const currentDate = new Date();
+            currentDate.setDate(currentDate.getDate() + 7); // Add 7 days
+            const reassessmentDate = currentDate.toLocaleDateString();
+            alert(`Sorry you are not Successful in this ateempt.Your score is below than Passing Mark. You need to reassess after 7 days or Next Trip. Reassessment Date: ${reassessmentDate}`);
+        }
+
+        // Update certificate score
+        certificateScore.innerText = `You Scored: ${score} out of ${totalQuestions} (${percentage}%)`;
+    });
+
+    // Event listener for bio data submission
+    bioDataForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const name = document.getElementById('name').value;
+        const vrn = document.getElementById('vrn').value;
+        const designation = document.getElementById('designation').value;
+
+        const currentDate = new Date().toLocaleString();
+        const score = document.getElementById('quiz-results').getElementsByTagName('li').length;
+        const totalQuestions = quizQuestions.length;
+        const percentage = ((score / totalQuestions) * 100).toFixed(2);
+
+        certificateInfo.innerHTML = `
+            <p>This is to certify that ${name} with VRN: ${vrn} and designation: ${designation} has Watched Drill 2024 MCR and successfully completed the  Assessment quiz </p>
+            <p>Date and Time: ${currentDate}</p>
+        `;
+        document.getElementById('certificate-container').style.display = 'block';
+    });
+
+    // Function to print certificate
+    document.getElementById('print-certificate').addEventListener('click', function() {
+        window.print();
+    });
+</script>
+
+</body>
+</html>
